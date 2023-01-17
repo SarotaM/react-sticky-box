@@ -169,7 +169,7 @@ const registerNode = (node, {offsetTop, offsetBottom, bottom}) => {
           }
         }
       } else if (mode === "relative") {
-        if (scrollPaneOffset + scrollY + offsetTop < naturalTop) {
+        if (scrollPaneOffset + scrollY < naturalTop + offset) {
           changeMode("stickyTop");
         }
       }
