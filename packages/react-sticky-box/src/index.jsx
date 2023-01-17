@@ -66,7 +66,7 @@ const registerNode = (node, {offsetTop, offsetBottom, bottom}) => {
   const getCurrentOffset = () => {
     if (mode === "relative") return offset;
     if (mode === "stickyTop") {
-      return Math.max(0, scrollPaneOffset + latestScrollY - naturalTop + offsetTop);
+      return Math.max(0, scrollPaneOffset + latestScrollY - naturalTop);
     }
     if (mode === "stickyBottom") {
       return Math.max(
@@ -169,7 +169,7 @@ const registerNode = (node, {offsetTop, offsetBottom, bottom}) => {
           }
         }
       } else if (mode === "relative") {
-        if (scrollPaneOffset + scrollY + offsetTop < naturalTop + offset) {
+        if (scrollPaneOffset + scrollY + offsetTop < naturalTop) {
           changeMode("stickyTop");
         }
       }
