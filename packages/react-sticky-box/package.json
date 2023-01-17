@@ -1,12 +1,11 @@
 {
-  "name": "react-sticky-box",
-  "version": "1.0.2",
+  "name": "@sarotam/react-sticky-box",
+  "version": "1.0.4",
   "description": "Boxes that behave nicely while scrolling",
   "scripts": {
     "build": "node build.js",
     "lint": "eslint --max-warnings=0 'src/**/*.{js,jsx}'",
-    "is-prettier": "prettier --list-different 'src/**/*.{js,jsx}'",
-    "prepublishOnly": "npm run lint && npm run is-prettier && npm run build && cp ../../README.md ."
+    "is-prettier": "prettier --list-different 'src/**/*.{js,jsx}'"
   },
   "keywords": [
     "react",
@@ -16,7 +15,7 @@
   ],
   "author": "Daniel Berndt <daniel.berndt@gmail.com> (http://danielberndt.net/)",
   "license": "ISC",
-  "repository": "codecks-io/react-sticky-box",
+  "repository": "https://github.com/sarotam/react-sticky-box.git",
   "peerDependencies": {
     "react": ">=16.8.0"
   },
